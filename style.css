@@ -1,0 +1,130 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MY CSS */
+:root {
+  --primary: hsl(47, 88%, 63%);
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-400: hsl(0, 0%, 50%);
+  --neutral-900: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--primary);
+  font-family: "Figtree", sans-serif;
+  line-height: 150%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+article {
+  max-width: 24rem;
+  padding: 1.5rem;
+  background-color: var(--neutral-100);
+  border-radius: 1.25rem;
+  display: grid;
+  row-gap: 1.25rem;
+  border: 1px var(--neutral-900) solid;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.illustration {
+  border-radius: 0.625rem;
+}
+
+.text {
+  display: grid;
+  row-gap: 0.75rem;
+}
+
+.tag {
+  background-color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 800;
+  max-width: fit-content;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.date {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+h1:hover {
+  color: var(--primary);
+}
+
+.body {
+  color: var(--neutral-400);
+}
+
+.profile-card {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  article {
+    max-width: 20.5rem;
+  }
+  .tag .date {
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 1.25rem;
+  }
+  .body .user-name {
+    font-size: 0.875rem;
+  }
+}
