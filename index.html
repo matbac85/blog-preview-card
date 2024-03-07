@@ -19,29 +19,36 @@
     <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body>
-    <article>
-      <img
-        src="./assets/images/illustration-article.svg"
-        alt="Illustration for the article"
-        class="illustration"
-      />
-      <div class="text">
-        <p class="tag">Learning</p>
-        <p class="date">Published 21 Dec 2023</p>
-        <h1 class="heading">HTML & CSS foundations</h1>
-        <p class="body">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
-      </div>
-      <div class="profile-card">
+    <main>
+      <article>
         <img
-          src="./assets/images/image-avatar.webp"
-          alt="profile pic of greg"
-          width="32px"
+          src="./assets/images/illustration-article.svg"
+          alt="A geometric composition primarily in yellow, black, and white, featuring prominently the common symbol representing the term 'code'."
+          class="illustration"
         />
-        <p class="user-name">Greg Hooper</p>
-      </div>
-    </article>
+        <div class="text">
+          <p class="tag">Learning</p>
+          <p class="date">Published 21 Dec 2023</p>
+          <h2 class="heading">
+            <a href="https://www.geeksforgeeks.org/foundation-css-introduction/"
+              >HTML & CSS foundations</a
+            >
+          </h2>
+          <p class="body">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <figure>
+          <img
+            src="./assets/images/image-avatar.webp"
+            alt="Close-up portrait of a white man with short brown hair."
+            width="32"
+            height="32"
+          />
+          <figcaption>Greg Hooper</figcaption>
+        </figure>
+      </article>
+    </main>
   </body>
 </html>
